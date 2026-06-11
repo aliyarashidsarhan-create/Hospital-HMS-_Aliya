@@ -69,6 +69,99 @@ namespace Hospital_Management_System
             });
             Console.WriteLine("Doctor Added successfuly with id :"+doctorId);
         }
+
+        //View All Patients
+        public static void ViewPatient(HospitalContext context)
+        {
+
+            foreach(Patient patient in context.Patients) 
+            {if (patient != null)
+                {
+                    Console.WriteLine("No patient");
+                }
+                else { 
+                Console.WriteLine("pationId:"+patient.patientId+"Pation Name:"+patient.patientName+
+                    "patient phone :"+patient.patientPhone);
+            }
+            }
+        }
+       
+
+        //View All Doctors by Specialization
+        public static void viewDoctorSpecialization(HospitalContext context)
+        {
+            Console.WriteLine("Serch for specialization");
+            string specialization= Console.ReadLine();
+
+           bool found= false;
+
+           foreach(Doctor doctor in context.Doctors)
+            {
+                if (found == true)
+                { 
+                Console.WriteLine("Doctor Id:"+doctor.doctorId+"Doctor Name:"+
+                    doctor.doctorName+"Doctor spetilization:"+doctor.doctorSpecialization);
+            }
+                else
+                {
+                    Console.WriteLine("No doctor found with specialization ="+specialization);
+                }
+            }
+           
+
+        }
+        //Add an Available Time Slot for a Doctor
+        public static void TimeSlotForDoctor(HospitalContext context)
+        {
+            Console.WriteLine("Enter Doctor Id");
+            int doctorid=int.Parse(Console.ReadLine());
+            Console.WriteLine("appointment id");
+            int appointmentId=int.Parse(Console.ReadLine());
+            Console.WriteLine("Appointment Date ");
+            string appointDate=Console.ReadLine();
+            Console.WriteLine("Enter Apoointment Time ");
+            string appointTime=Console.ReadLine();
+            Console.WriteLine("Available state");
+            bool isBook=false;
+          
+            foreach(Doctor doctor in context.Doctors)
+            {
+                if(doctorid==doctorid)
+                {
+                    return ;
+                }
+                else
+                {
+                    Console.WriteLine("no doctor");
+                }
+            }
+
+            foreach(AvailableSlot availableSlot in context.AvailableSlots)
+            {
+              
+
+                context.Appointments.Add(new Appointment
+                {
+                    appointmentId = appointmentId,
+                    doctorId = doctorid,
+                    appointmentDate = appointDate,
+                    appointmentTime = appointTime,
+                    isBook = isBook
+                });
+
+            }
+
+          
+        }
+        //Book an Appointment
+        public static void BookAppointment(HospitalContext context)
+        {
+            Console.WriteLine("Enter patient Id :");
+            int patientId=int.Parse(Console.ReadLine());
+
+
+        }
+
         static void Main(string[] args)
         {
             HospitalContext mainContext = new HospitalContext();
@@ -106,12 +199,16 @@ namespace Hospital_Management_System
                         AddDoctor(mainContext);
                         break;
                     case 3:
+                        ViewPatient(mainContext);
                         break;
                     case 4:
+                        viewDoctorSpecialization(mainContext);
                         break;
                     case 5:
+                        TimeSlotForDoctor(mainContext);
                         break;
                     case 6:
+                        BookAppointment(mainContext);
                         break;
                     case 7:
                         break;
