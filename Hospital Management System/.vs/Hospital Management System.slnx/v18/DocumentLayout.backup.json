@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\module\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\module\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\module\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\module\\medicalrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\module\\availableslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\module\\availableslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\module\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\module\\doctor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\module\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\module\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|c:\\users\\aliya\\onedrive\\desktop\\back\\hospital management system (hms)\\hospital management system\\hospital management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A1CC2773-1C0E-46B9-89CD-51AD4250D6FC}|Hospital Management System\\Hospital Management System.csproj|solutionrelative:hospital management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,11 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AvailableSlot.cs",
+              "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\AvailableSlot.cs",
+              "RelativeDocumentMoniker": "Hospital Management System\\Module\\AvailableSlot.cs",
+              "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\AvailableSlot.cs",
+              "RelativeToolTip": "Hospital Management System\\Module\\AvailableSlot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:33:43.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MedicalRecord.cs",
+              "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\MedicalRecord.cs",
+              "RelativeDocumentMoniker": "Hospital Management System\\Module\\MedicalRecord.cs",
+              "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\MedicalRecord.cs",
+              "RelativeToolTip": "Hospital Management System\\Module\\MedicalRecord.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:33:23.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Appointment.cs",
+              "RelativeDocumentMoniker": "Hospital Management System\\Module\\Appointment.cs",
+              "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Appointment.cs",
+              "RelativeToolTip": "Hospital Management System\\Module\\Appointment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:32:56.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Doctor.cs",
+              "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Doctor.cs",
+              "RelativeDocumentMoniker": "Hospital Management System\\Module\\Doctor.cs",
+              "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Doctor.cs",
+              "RelativeToolTip": "Hospital Management System\\Module\\Doctor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:32:27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Patient.cs",
+              "RelativeDocumentMoniker": "Hospital Management System\\Module\\Patient.cs",
+              "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Module\\Patient.cs",
+              "RelativeToolTip": "Hospital Management System\\Module\\Patient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T05:32:12.015Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Program.cs",
               "RelativeDocumentMoniker": "Hospital Management System\\Program.cs",
