@@ -50,8 +50,7 @@
               "RelativeToolTip": "Hospital Management System\\HospitalContext .cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T05:47:02.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T05:47:02.373Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "Hospital Management System\\Module\\AvailableSlot.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T05:33:43.765Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T05:33:43.765Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "Hospital Management System\\Module\\Appointment.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T05:32:56.391Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T05:32:56.391Z"
             },
             {
               "$type": "Document",
@@ -89,8 +86,7 @@
               "RelativeToolTip": "Hospital Management System\\Module\\Doctor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T05:32:27Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-11T05:32:27Z"
             },
             {
               "$type": "Document",
@@ -100,7 +96,7 @@
               "RelativeDocumentMoniker": "Hospital Management System\\Program.cs",
               "ToolTip": "C:\\Users\\aliya\\OneDrive\\Desktop\\back\\Hospital Management System (HMS)\\Hospital Management System\\Hospital Management System\\Program.cs",
               "RelativeToolTip": "Hospital Management System\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwDcAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T05:31:19.57Z",
               "EditorCaption": ""

@@ -4,6 +4,43 @@ namespace Hospital_Management_System
 {
     public  class Program
     {
+        //Patient Registration
+        public static void RegisterPationt(HospitalContext context)
+        {
+            Console.WriteLine("Patient Name");
+            string patientName=Console.ReadLine();
+            Console.WriteLine("Patient Age ");
+            int patientAge = int.Parse(Console.ReadLine());
+            Console.WriteLine("patient Gender");
+            string patientGender=Console.ReadLine();
+            Console.WriteLine("patient Phone");
+            string patientPhone=Console.ReadLine();
+            Console.WriteLine("patient Email");
+            string patientEmail=Console.ReadLine();
+            Console.WriteLine("patient Blood Type");
+            string patientBlood=Console.ReadLine();
+
+            int patientId = (context.Patients.Count)+ 1;
+
+            //add patient
+            context.Patients.Add(
+                new Patient
+                {
+                    patientId = patientId,
+                    patientName=patientName,
+                    patientAge=patientAge,
+                    patientGender=patientGender,
+                    patientBloodType=patientBlood,
+                    patientEmail=patientEmail,
+                    patientPhone=patientPhone
+
+                }
+                );
+            Console.WriteLine("patient Added Successfully with id :" +patientId);
+
+
+        }
+
 
         static void Main(string[] args)
         {
