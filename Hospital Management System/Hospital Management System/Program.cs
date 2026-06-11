@@ -41,7 +41,34 @@ namespace Hospital_Management_System
 
         }
 
+        //Add a New Doctor
+        public static void AddDoctor(HospitalContext context)
+        {
+            Console.WriteLine("Enter doctor Name");
+            string doctorName = Console.ReadLine();
+            Console.WriteLine("Enter doctor Specialization");
+            string doctorSpecial = Console.ReadLine();
+            Console.WriteLine(" Enter doctor Phone number");
+            string doctorPhone = Console.ReadLine();
+            Console.WriteLine("Entetr doctor Email");
+            string doctorEmail = Console.ReadLine();
 
+            int doctorId = (context.Doctors.Count) + 1;
+            //calculation fee
+
+
+            // Add new doctor
+            context.Doctors.Add(new Doctor
+            {
+                doctorId = doctorId,
+                doctorName = doctorName,
+                doctorSpecialization = doctorSpecial,
+                doctorEmail = doctorEmail,
+                doctorPhone = doctorPhone
+
+            });
+            Console.WriteLine("Doctor Added successfuly with id :"+doctorId);
+        }
         static void Main(string[] args)
         {
             HospitalContext mainContext = new HospitalContext();
@@ -73,8 +100,10 @@ namespace Hospital_Management_System
                 switch(option) 
                 {
                     case 1:
+                        RegisterPationt(mainContext);
                         break;
                     case 2:
+                        AddDoctor(mainContext);
                         break;
                     case 3:
                         break;
@@ -103,4 +132,5 @@ namespace Hospital_Management_System
         }
     }
 }
+
 
