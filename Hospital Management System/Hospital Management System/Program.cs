@@ -235,7 +235,8 @@ namespace Hospital_Management_System
 
             }
             //add medical record 
-           decimal visitFee=foundAppointment.Doctor.consultationFee;
+            Console.WriteLine("enter visit fee");
+           decimal visitFee=decimal.Parse(Console.ReadLine());
 
 
             context.MedicalRecords.Add(
