@@ -129,38 +129,34 @@ namespace Hospital_Management_System
             AvailableSlot slot=new AvailableSlot();
             slot.isBooked = false;
 
-            foreach(Doctor doctor in context.Doctors)
+            
+            foreach(AvailableSlot availableSlot in context.AvailableSlots)
             {
-                if(doctorid==doctorid)
+                if (doctorid == doctorid)
                 {
-                
-                    return ;
+                    Console.WriteLine("doctor is available");
+                    return;
                 }
                 else
                 {
-                    Console.WriteLine("no doctor");
+                    Console.WriteLine("doctor not available");
                 }
             }
 
-            foreach(AvailableSlot availableSlot in context.AvailableSlots)
+            context.Appointments.Add(new Appointment
             {
-              
+                appointmentId = appointmentId,
+                doctorId = doctorid,
+                appointmentDate = appointDate,
+                appointmentTime = appointTime,
 
-                context.Appointments.Add(new Appointment
-                {
-                    appointmentId = appointmentId,
-                    doctorId = doctorid,
-                    appointmentDate = appointDate,
-                    appointmentTime = appointTime,
-                   isBooked =true
-                });
+            });
 
-            }
+            slot.isBooked = true;
 
-          
+
         }
         //Book an Appointment
-
         public static void BookAppointment(HospitalContext context)
         {
             Console.WriteLine("Enter patient Id :");
@@ -170,23 +166,125 @@ namespace Hospital_Management_System
 
             Appointment appointment = new Appointment();
 
-            foreach (AvailableSlot slot in context.AvailableSlots) 
+            foreach (AvailableSlot slot in context.AvailableSlots)
             {
                 if (slot.doctorId == doctorId && slot.isBooked == false)
                 {
-                    Console.WriteLine("Available time for doctor");
+                    Console.WriteLine("Available time for doctor" + slot);
+
+                  
+                }
+                else
+                {
                     slot.isBooked = false;
                     appointment.status = "Booked";
+                    Console.WriteLine("The Doctor Not Available");
+
                 }
-              else Console.WriteLine("The Doctor Not Available");
-              
             }
             
 
         }
         //Cancel an Appointment
+        public static void CancelAppointment(HospitalContext context)
+        { 
+            Console.WriteLine("Enter Appintment id");
+            int appointmentId = int.Parse(Console.ReadLine());
 
+            foreach (Appointment appointment in context.Appointments)
+            {
+                if(appointment.status=="Canceled")
+                {
+                    Console.WriteLine("Appointment is Cancelled");
+                }
+                else
+                {
+                 
+                    appointment.status = "Cancelled";
+
+                }
+                AvailableSlot slot = new AvailableSlot();
+                slot.isBooked = false;
+
+            }
+        }
         //Create a Medical Record After a Visit
+         public static void CreateMedicalRecord(HospitalContext context)
+        {
+            Console.WriteLine("Enter Appointment Id");
+            int appointmentId=int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Diagnosis");
+            string diagnosis = Console.ReadLine();
+            Console.WriteLine("Enter prescription");
+            string prescription=Console.ReadLine();
+
+            Appointment foundAppointment=null;
+
+            foreach(Appointment appointment in context.Appointments)
+            {
+                if (appointment.appointmentId == appointmentId)
+                {
+                    foundAppointment = appointment;
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Appointment not found");
+                    return;
+                }
+
+            }
+            //add medical record 
+           decimal visitFee=foundAppointment.Doctor.consultationFee;
+
+
+            context.MedicalRecords.Add(
+                new MedicalRecord
+                {
+                    appointmentId = appointmentId,
+                    diagnosis = diagnosis,
+                    prescription= prescription,
+                    visitFee = visitFee,
+                }
+
+                );
+
+            foundAppointment.status = "Complete";
+
+
+        }
+     
+        //Generate a Patient Medical History Report
+        public static void PatientMedicalHistory(HospitalContext context)
+        {
+            Console.WriteLine("Enter Patient Id");
+            int patientId=int.Parse(Console.ReadLine());
+      
+
+            foreach(MedicalRecord record in context.MedicalRecords)
+            {
+                if(record.patientId == patientId) { 
+           
+
+                Console.WriteLine("visitDate"+ visitDate+ "doctorName"+ doctorName+
+                    "diagnosis"+ diagnosis+ "prescription"+ prescription);
+                }
+                decimal total = 0;
+                total = record.visitFee;
+            }
+         
+
+        }
+        //Doctor Workload and Revenue Summary
+        public static void WorkloadAndRevenue(HospitalContext context)
+        {
+            //completed appointments//status compleate
+            // cancelled.// appointment status canncelled 
+            //revenue from medical record 
+            //
+
+
+        }
         static void Main(string[] args)
         {
             HospitalContext mainContext = new HospitalContext();
@@ -236,17 +334,21 @@ namespace Hospital_Management_System
                         BookAppointment(mainContext);
                         break;
                     case 7:
+                        CancelAppointment(mainContext);
                         break;
                     case 8:
+                        CreateMedicalRecord(mainContext);
                         break;
                     case 9:
+                        CreateMedicalRecord(mainContext);
                         break;
                     case 10:
+                        PatientMedicalHistory(mainContext);
                         break;
                     case 0:
                         exit = true;
                         break;
-            }
+                    }
                 Console.WriteLine("Press any key to continue...");
                 Console.ReadKey();
                 Console.Clear();
