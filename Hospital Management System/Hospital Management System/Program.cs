@@ -1,4 +1,6 @@
 ﻿using Hospital_Management_System.Module;
+using System.Runtime.CompilerServices;
+using System.Threading.Channels;
 
 namespace Hospital_Management_System
 {
@@ -122,12 +124,16 @@ namespace Hospital_Management_System
             Console.WriteLine("Enter Apoointment Time ");
             string appointTime=Console.ReadLine();
             Console.WriteLine("Available state");
-            bool isBook=false;
-          
+            
+            //add slot
+            AvailableSlot slot=new AvailableSlot();
+            slot.isBooked = false;
+
             foreach(Doctor doctor in context.Doctors)
             {
                 if(doctorid==doctorid)
                 {
+                
                     return ;
                 }
                 else
@@ -146,7 +152,7 @@ namespace Hospital_Management_System
                     doctorId = doctorid,
                     appointmentDate = appointDate,
                     appointmentTime = appointTime,
-                    isBook = isBook
+                   isBooked =true
                 });
 
             }
@@ -154,14 +160,33 @@ namespace Hospital_Management_System
           
         }
         //Book an Appointment
+
         public static void BookAppointment(HospitalContext context)
         {
             Console.WriteLine("Enter patient Id :");
             int patientId=int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter doctor Id");
+            int doctorId=int.Parse(Console.ReadLine());
 
+            Appointment appointment = new Appointment();
+
+            foreach (AvailableSlot slot in context.AvailableSlots) 
+            {
+                if (slot.doctorId == doctorId && slot.isBooked == false)
+                {
+                    Console.WriteLine("Available time for doctor");
+                    slot.isBooked = false;
+                    appointment.status = "Booked";
+                }
+              else Console.WriteLine("The Doctor Not Available");
+              
+            }
+            
 
         }
+        //Cancel an Appointment
 
+        //Create a Medical Record After a Visit
         static void Main(string[] args)
         {
             HospitalContext mainContext = new HospitalContext();
