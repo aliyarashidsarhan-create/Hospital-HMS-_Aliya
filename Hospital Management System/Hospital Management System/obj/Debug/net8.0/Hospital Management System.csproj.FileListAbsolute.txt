@@ -1,0 +1,15 @@
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\bin\Debug\net8.0\Hospital Management System.exe
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\bin\Debug\net8.0\Hospital Management System.deps.json
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\bin\Debug\net8.0\Hospital Management System.runtimeconfig.json
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\bin\Debug\net8.0\Hospital Management System.dll
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\bin\Debug\net8.0\Hospital Management System.pdb
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.AssemblyInfoInputs.cache
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.AssemblyInfo.cs
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.csproj.CoreCompileInputs.cache
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.sourcelink.json
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.dll
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\refint\Hospital Management System.dll
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.pdb
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\Hospital Management System.genruntimeconfig.cache
+C:\Users\aliya\OneDrive\Desktop\back\Hospital Management System (HMS)\Hospital Management System\Hospital Management System\obj\Debug\net8.0\ref\Hospital Management System.dll

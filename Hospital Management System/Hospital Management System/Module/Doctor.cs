@@ -14,5 +14,18 @@ namespace Hospital_Management_System.Module
         public string doctorPhone { get; set; }
         public string doctorEmail { get; set; }
         public decimal consultationFee { get; set; }
+
+        public Doctor (int Id, string Name, string Specialization, string Phone, string Email, decimal Fee)
+        {
+           doctorId = Id;
+           doctorName = Name;
+           doctorSpecialization = Specialization;
+           doctorPhone = Phone;
+           doctorEmail = Email;
+           consultationFee =Fee;
+        }
+        public override string ToString() =>
+            $"{doctorId} | {doctorName} | {doctorSpecialization} | {doctorPhone} |{doctorPhone}|{doctorEmail}|{consultationFee}";
+     
     }
 }
